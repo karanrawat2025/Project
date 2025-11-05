@@ -1,0 +1,32 @@
+[
+  {
+    "name": "karan",
+    "email": "karanrawat@egmai.com",
+    "course": "science",
+    "feedback": "good"
+  },
+  {
+    "name": "ayush singh rawat",
+    "email": "ayushrawat123@gmail.com",
+    "course": "BCA",
+    "feedback": "MCA karni parhegi."
+  },
+  {
+    "name": "Ayush",
+    "email": "ayush123@gmail.com",
+    "course": "B.tech",
+    "feedback": "Nahi hori"
+  },
+  {
+    "name": "hehe",
+    "email": "hehe@gmial.com",
+    "course": "hehehehe",
+    "feedback": "hehe is better"
+  },
+  {
+    "name": "html",
+    "email": "html.@gmil.com",
+    "course": "outoue",
+    "feedback": "htmls is s"
+  }
+]

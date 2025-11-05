@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Feedback Form</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+</head>
+<body>
+
+  <!-- Floating Header -->
+  <header class="header">
+
+    <h2>Student Feedback Portal</h2>
+  </header>
+
+  <!-- Particles Background -->
+  <div id="particles-js"></div>
+
+  <div class="container">
+    <div class="form-card">
+      <div class="form-header">
+        <i class="fas fa-comment-dots fa-3x"></i>
+        <h1>We Value Your Feedback</h1>
+        <p>Share your thoughts about the course to help us improve!</p>
+      </div>
+
+      <form id="feedbackForm">
+        <div class="form-group">
+          <input type="text" id="name" name="name" placeholder="Full Name" required>
+          <label><i class="fas fa-user"></i></label>
+        </div>
+
+        <div class="form-group">
+          <input type="email" id="email" name="email" placeholder="Email" required>
+          <label><i class="fas fa-envelope"></i></label>
+        </div>
+
+        <div class="form-group">
+          <input type="text" id="course" name="course" placeholder="Course Name" required>
+          <label><i class="fas fa-book"></i></label>
+        </div>
+
+        <div class="form-group">
+          <textarea id="feedback" name="feedback" rows="5" placeholder="Your Feedback" required></textarea>
+          <label><i class="fas fa-comment-dots"></i></label>
+        </div>
+
+        <button type="submit">Submit Feedback</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Thank You Overlay -->
+  <div id="thankYouOverlay" class="overlay">
+    <div class="thank-you-card">
+      <i class="fas fa-check-circle fa-3x"></i>
+      <h2>Thank You!</h2>
+      <p>Your feedback has been submitted successfully.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    // Particles.js configuration
+    particlesJS('particles-js', {
+      particles: {
+        number: { value: 60 },
+        color: { value: '#ffffff' },
+        shape: { type: 'circle' },
+        opacity: { value: 0.5 },
+        size: { value: 3 },
+        line_linked: { enable: true, distance: 120, color: '#ffffff', opacity: 0.4, width: 1 },
+        move: { enable: true, speed: 2 }
+      },
+      interactivity: {
+        detect_on: 'canvas',
+        events: { onhover: { enable: true, mode: 'repulse' } }
+      },
+      retina_detect: true
+    });
+  </script>
+</body>
+</html>
